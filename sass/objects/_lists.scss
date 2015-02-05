@@ -1,0 +1,24 @@
+/**
+ * LISTS
+ *
+ * BLOCK LISTS
+ */
+
+/**
+ * BLOCK LISTS
+ */
+
+.notlist,
+%notlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navlist--h {
+    @extend %notlist;
+
+    > li {
+        float: left;
+    }
+}

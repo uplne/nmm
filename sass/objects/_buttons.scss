@@ -1,0 +1,60 @@
+/**
+ * BUTTONS
+ *
+ * PALLETE
+ * DIMENSIONS
+ * DEFAULT ATOM
+ * LIBRARY ATOMS
+ */
+
+/**
+ * PALLETE
+ */
+$btn-default-bg: #ccc;
+$btn-default-color: #000;
+
+/**
+ * DIMENSIONS
+ */
+$btn-radius: 4px;
+
+/**
+ * DEFAULT ATOMS
+ */
+
+/**
+ * Default ovo.css button style. If you want to create your own
+ * buttons copy this atom styles and make your own changes.
+ *
+ * Extending %btn abstraction.
+ */
+
+.btn,
+%btn {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.btn {
+    @extend %btn;
+
+    padding: 0 1em;
+    line-height: 3;
+    background-color: $btn-default-bg;
+    color: $btn-default-color;
+    border-radius: $btn-radius;
+}
+
+.btn--medium {
+    @extend .btn;
+
+    padding: 0 2em;
+    line-height: 4;
+}
