@@ -37,7 +37,6 @@ $btn-radius: 3px;
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
-    font-family: inherit;
     font-size: 100%;
     text-decoration: none;
     text-transform: uppercase;
@@ -47,8 +46,6 @@ $btn-radius: 3px;
 }
 
 .btn {
-    @extend %btn;
-
     font-size: 12px;
     padding: 0 1em;
     line-height: 2.5;
