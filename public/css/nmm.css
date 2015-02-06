@@ -1,0 +1,139 @@
+/**
+ * OVOCSS - ovocss.com
+ *
+ * ovo.css should be a ligthwieght module library using modern CSS principles 
+ * from SMACSS, BEM etc.
+ *
+ * LICENSE
+ *
+ * Copyright 2014 Steve Vadocz
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Thank you for choosing ovo.css.
+ */
+/**
+ * Generic styles
+ */
+/**
+ * Mixins
+ */
+/**
+ * Vendor prefixes
+ */
+/**
+ * Font size with vertical rhytm.
+ * Thanks to Harry Roberts (inuit.css).
+ */
+/**
+ * RESET
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Give form elements some cursor interactions.
+ * From Harry Roberts - inuit.css
+ */
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer; }
+
+.text-input:active,
+.text-input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none; }
+
+/**
+ * Base styles
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  font-family: "Arial"; }
+
+/**
+ * Objects
+ */
+/**
+ * BUTTONS
+ *
+ * PALLETE
+ * DIMENSIONS
+ * DEFAULT ATOM
+ * LIBRARY ATOMS
+ */
+/**
+ * PALLETE
+ */
+/**
+ * DIMENSIONS
+ */
+/**
+ * DEFAULT ATOMS
+ */
+/**
+ * Default ovo.css button style. If you want to create your own
+ * buttons copy this atom styles and make your own changes.
+ *
+ * Extending %btn abstraction.
+ */
+.btn,
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: inherit;
+  font-size: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 0; }
+
+.btn {
+  font-size: 12px;
+  padding: 0 1em;
+  line-height: 2.5;
+  background-color: #a1a1a1;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out 0s; }
+  .btn:hover {
+    background-color: #8f8f8f; }
+
+.btn--cta {
+  background-color: #ba245f; }
+  .btn--cta:hover {
+    background-color: #d93877; }
+
+/*# sourceMappingURL=nmm.css.map */
