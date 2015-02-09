@@ -1,3 +1,17 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/page\.scss}line{font-family:\000031}}
+.container {
+  width: 90%;
+  margin: 2em auto 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/page\.scss}line{font-family:\000036}}
+h2 {
+  margin-bottom: .5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/page\.scss}line{font-family:\0000310}}
+.section {
+  margin-bottom: 2em;
+}
 
 /*# sourceMappingURL=page.css.map */

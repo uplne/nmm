@@ -3,17 +3,6 @@
  */
 
 /**
- * Vendor prefixes
- */
-@mixin vendor($style, $value...) {
-    -webkit-#{$style}: $value;
-       -moz-#{$style}: $value;
-        -ms-#{$style}: $value;
-         -o-#{$style}: $value;
-            #{$style}: $value;
-}
-
-/**
  * Font size with vertical rhytm.
  * Thanks to Harry Roberts (inuit.css).
  */

@@ -106,7 +106,7 @@ module.exports = function(grunt) {
                 files: [
                     '<%= dir.img %>/*.{png,jpg,gif,svg}',
                     '<%= dir.js %>/**/*.js',
-                    '<%= dir.views %>/**/*.hbs'
+                    '<%= dir.sass %>/**/*.scss'
                 ],
                 options: {
                     livereload: true

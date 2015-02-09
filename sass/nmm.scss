@@ -26,6 +26,8 @@
 /**
  * Generic styles
  */
+@import "partials/colors";
+@import "partials/variables";
 @import "partials/mixins";
 @import "partials/reset";
 @import "partials/base";
@@ -33,4 +35,6 @@
 /**
  * Objects
  */
-@import "objects/_buttons";
+@import "objects/buttons";
+@import "objects/lists";
+@import "objects/info";

@@ -10,11 +10,11 @@
 /**
  * PALLETE
  */
-$btn-default-bg: #a1a1a1;
-$btn-default-bg-hover: #8f8f8f;
+$btn-default-bg: $btn-like-bg;
+$btn-default-bg-hover: $btn-like-bg-hover;
 $btn-cta-bg: #ba245f;
 $btn-cta-bg-hover: #d93877;
-$btn-default-color: #fff;
+$btn-default-color: $btn-like-color;
 
 /**
  * DIMENSIONS
