@@ -211,4 +211,16 @@ body {
   border-radius: 2.85714em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_table\.scss}line{font-family:\000031}}
+.table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_table\.scss}line{font-family:\000037}}
+.table--bordered {
+  border: 1px solid #c4c4c4;
+}
+
 /*# sourceMappingURL=nmm.css.map */
