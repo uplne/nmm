@@ -26,6 +26,35 @@
  * Generic styles
  */
 /**
+ * Functions
+ */
+/**
+ * Strip units
+ */
+/**
+ * Convert number in whatever units to em
+ *
+ * @param  {Number} $number Number in whatever units (px, %, etc)
+ * @return {Number}         Number in EMs
+ */
+/**
+ * Convert number to EMs
+ * 
+ * @param  {Number} $target      Number with no units
+ * @param  {Number} $context: 14 Defalt size
+ * @return {Number in ems}
+ */
+/**
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/partials\/_clearfix\.scss}line{font-family:\000035}}
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**
  * Mixins
  */
 /**
@@ -81,7 +110,7 @@ textarea:focus {
 html,
 body {
   height: 100%;
-  font-family: "Leto", Helvetica, Arial;
+  font-family: "Lato", Helvetica, Arial;
 }
 
 /**
@@ -116,6 +145,7 @@ body {
   vertical-align: middle;
   white-space: nowrap;
   font-size: 100%;
+  font-family: "Lato", Helvetica, Arial;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -123,7 +153,7 @@ body {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_buttons\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_buttons\.scss}line{font-family:\0000349}}
 .btn {
   font-size: 12px;
   padding: 0 1em;
@@ -133,16 +163,16 @@ body {
   border-radius: 3px;
   transition: all 0.2s ease-in-out 0s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_buttons\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_buttons\.scss}line{font-family:\0000359}}
 .btn:hover {
   background-color: #8f8f8f;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_buttons\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_buttons\.scss}line{font-family:\0000364}}
 .btn--cta {
   background-color: #ba245f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_buttons\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/svadocz\/Dev\/nmm\/sass\/objects\/_buttons\.scss}line{font-family:\0000367}}
 .btn--cta:hover {
   background-color: #d93877;
 }
@@ -172,7 +202,13 @@ body {
 .info {
   font-size: 11px;
   font-size: 0.6875rem;
-  line-height: 1.81818;
+  display: inline-block;
+  padding: 0 1em;
+  line-height: 1.5;
+  background-color: #a1a1a1;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 2.85714em;
 }
 
 /*# sourceMappingURL=nmm.css.map */

@@ -1,0 +1,10 @@
+/**
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ */
+.cf {
+    &:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+}

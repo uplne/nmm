@@ -1,0 +1,31 @@
+/**
+ * Functions
+ */
+
+/**
+ * Strip units
+ */
+@function strip-units($number) {
+    @return $number / ($number * 0 + 1);
+}
+
+/**
+ * Convert number in whatever units to em
+ *
+ * @param  {Number} $number Number in whatever units (px, %, etc)
+ * @return {Number}         Number in EMs
+ */
+@function toEM($number) {
+    @return strip-units($number) * 1em;
+}
+
+/**
+ * Convert number to EMs
+ * 
+ * @param  {Number} $target      Number with no units
+ * @param  {Number} $context: 14 Defalt size
+ * @return {Number in ems}
+ */
+@function em($target, $context: 14) {
+    @return ($target / $context) * 1em;
+}

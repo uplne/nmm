@@ -96,21 +96,6 @@ module.exports = function(grunt) {
                 options: {
                     livereload: true
                 }
-            },
-
-            /**
-             * If any system files changes reload browser.
-             * Requires webkit browser extension.
-             */
-            livereload: {
-                files: [
-                    '<%= dir.img %>/*.{png,jpg,gif,svg}',
-                    '<%= dir.js %>/**/*.js',
-                    '<%= dir.sass %>/**/*.scss'
-                ],
-                options: {
-                    livereload: true
-                }
             }
         },
 
