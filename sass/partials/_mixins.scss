@@ -6,11 +6,21 @@
  * Font size with vertical rhytm.
  * Thanks to Harry Roberts (inuit.css).
  */
-@mixin font-size($font-size, $line-height:true){
+@mixin font-size($font-size, $line-height: auto) {
     font-size: $font-size;
     font-size: ($font-size / $base-font-size) * 1rem;
 
-    @if $line-height == true{
+    @if $line-height == auto {
         line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+    }
+
+    @else {
+    	if (typeof($line-height) == number) {
+    		line-height: $line-height;
+    	}
+
+    	@elseif ($line-height != none and $line-height != false) {
+    		@warn "'#{$line-height}' is not a valid 'line-height' value."
+    	}
     }
 }
