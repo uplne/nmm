@@ -134,5 +134,10 @@ module.exports = function(grunt) {
         'notify:dev'
     ]);
 
+    grunt.registerTask('build', [
+        'sass:build',
+        'notify:build'
+    ]);
+
     grunt.registerTask('prefix', ['autoprefixer:dev']);
 };

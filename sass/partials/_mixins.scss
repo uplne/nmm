@@ -15,7 +15,7 @@
     }
 
     @else {
-    	if (typeof($line-height) == number) {
+    	@if (type-of($line-height) == number) {
     		line-height: $line-height;
     	}
 
