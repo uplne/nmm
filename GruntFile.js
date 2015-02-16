@@ -57,7 +57,7 @@ module.exports = function(grunt) {
                 cwd: '<%= dir.sass %>/',
                 src: ['*.scss', '!_*.scss'],
                 dest: '<%= dir.css %>',
-                ext: '.css'
+                ext: '.min.css'
             }
         },
 
@@ -90,55 +90,6 @@ module.exports = function(grunt) {
                     livereload: true
                 }
             },
-
-            server: {
-                files: ['.rebooted'],
-                options: {
-                    livereload: true
-                }
-            }
-        },
-
-        /**
-        * Nodemon
-        * @github.com/ChrisWren/grunt-nodemon
-        */
-        nodemon: {
-            dev: {
-                script: 'index.js',
-                options: {
-                    nodeArgs: ['--debug'],
-                    env: {
-                        PORT: '1985'
-                    },
-                    // omit this property if you aren't serving HTML files and
-                    // don't want to open a browser tab on start
-                    callback: function (nodemon) {
-                        nodemon.on('log', function (event) {
-                            console.log(event.colour);
-                        });
-
-                        // refreshes browser when server reboots
-                        nodemon.on('restart', function () {
-                            // Delay before server listens on port
-                            setTimeout(function() {
-                                require('fs').writeFileSync('.rebooted', 'rebooted');
-                            }, 1000);
-                        });
-
-                        /*setTimeout(function() {
-                            require('grunt-open')('http://localhost:1955');
-                        }, 1000);*/
-                    }
-                }
-            }
-        },
-
-        open: {
-            dev: {
-              path: 'http://localhost:1985',
-              app: 'Google Chrome'
-            }
         },
 
         // In order to run the Karma watcher and the SASS watchers concurrently, we need to run this task
